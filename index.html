@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/shape.css">
+    <link rel="stylesheet" href="css/aboutcolor.css">
+    <link rel="stylesheet" href="css/project.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <title>daniilworld | HOME</title>
+    <title>DANIILWORLD</title>
 </head>
 
 <body>
@@ -39,14 +42,24 @@
             </div>
             <div class="menu-container">
                 <div class="menu">
-                    <a class="button" href="./project.html">МОИ ПРОЕКТЫ</a>
-                    <a class="button" href="./about.html">ОБО МНЕ</a>
+                    <a class="button" href="#my_project" data-translate="nav.projects">МОИ ПРОЕКТЫ</a>
+                    <a class="button" href="#about_me" data-translate="nav.about">ОБО МНЕ</a>
+                    <a class="button" href="#my_knowledge" data-translate="nav.knowledge">МОИ ЗНАНИЯ</a>
                     <div class="dropdown">
-                        <a href="#" class="dropbtn">МОИ СОЦ.СЕТИ</a>
+                        <a href="#" class="dropbtn" data-translate="nav.social">МОИ СОЦ.СЕТИ</a>
                         <div class="dropdown-content">
                             <a href="https://www.youtube.com/@daniilworld/" target="_blank">YOUTUBE</a>
                             <a href="https://t.me/daniilworld_blog_news" target="_blank">TELEGRAM</a>
                             <a href="#" target="_blank">DISKORD</a>
+                            <a href="https://github.com/DaniilWorld" target="_blank">GITHUB</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn" data-translate="nav.language">🌐 ЯЗЫК</a>
+                        <div class="dropdown-content">
+                            <a href="#" class="lang-option" data-lang="ru">🇷🇺 Русский</a>
+                            <a href="#" class="lang-option" data-lang="en">🇬🇧 English</a>
+                            <a href="#" class="lang-option" data-lang="uk">🇺🇦 Українська</a>
                         </div>
                     </div>
                 </div>
@@ -55,13 +68,243 @@
     </header>
 
     <div class="main_continer">
-        <h1 data-tooltip="это мой никнейм" class="custom-tooltip my_nike">DANIILWORLD</h1>
-        <p class="about_p">
-            Страница в разроботке!!!
-        </p>
-        <p class="about_p copyright">&copy;2025</p>
+        <h1 data-tooltip-ru="это мой никнейм" data-tooltip-en="this is my nickname" data-tooltip-uk="це мій нікнейм"
+            class="custom-tooltip my_nike">DANIILWORLD</h1>
+        <p class="chapter" id="about_me" data-translate="sections.about">ОБО МНЕ</p>
+        <div class="about-container">
+            <div class="about-card">
+                <div class="about-card-icon">👤</div>
+                <h3 class="about-card-title" data-translate="about.about_self.title">О себе</h3>
+                <p class="about-card-text" data-translate="about.about_self.text">Зовут Даниил (никнейм DANIILWORLD).
+                    Учусь программированию уже относительно
+                    давно, но только недавно решил, что пора что-то менять, так как знаний у меня столько, сколько можно
+                    было бы получить за 3–4 месяца обучения.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">🌍</div>
+                <h3 class="about-card-title" data-translate="about.geography.title">География</h3>
+                <p class="about-card-text" data-translate="about.geography.text">Родился и жил до 11 лет в Кыргызстане,
+                    примерно в 11 лет переехал в Турцию,
+                    где прожил 2,5 года. Сейчас я живу в Португалии!</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">🎮</div>
+                <h3 class="about-card-title" data-translate="about.past.title">Прошлое</h3>
+                <p class="about-card-text" data-translate="about.past.text">Долго играл в Minecraft, но это меня и
+                    погубило, потому что вместо того чтобы
+                    решать задачки по программированию, я сидел и болтал с друзьями(против чего я не был против), играя
+                    параллельно в кубики.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">🎯</div>
+                <h3 class="about-card-title" data-translate="about.goals.title">Цели</h3>
+                <p class="about-card-text" data-translate="about.goals.text">Сейчас я настроен всерьёз: я хочу полностью
+                    выучить Python, а также научиться
+                    работать с библиотеками для JavaScript!</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">💭</div>
+                <h3 class="about-card-title" data-translate="about.hobbies.title">Увлечения</h3>
+                <p class="about-card-text" data-translate="about.hobbies.text">Увлечений сейчас как таковых нет (по той
+                    причине, что я решил уйти из
+                    Minecraft), максимум могу сказать о создании своего конланга — Казманского языка.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">🤝</div>
+                <h3 class="about-card-title" data-translate="about.teamwork.title">Работа в команде</h3>
+                <p class="about-card-text" data-translate="about.teamwork.text">Я интроверт и боюсь людей, но возможно,
+                    когда-нибудь я смогу нормально
+                    работать в команде с другими программистами, не боясь, что буду просто человеком, которого взяли для
+                    галочки...</p>
+            </div>
+        </div>
+
+        <p class="chapter" id="my_knowledge" data-translate="sections.knowledge">МОИ ЗНАНИЯ</p>
+        <div class="knowledge-container">
+            <div class="knowledge-section">
+                <h3 class="knowledge-section-title" data-translate="knowledge.languages.title">Языки программирования
+                </h3>
+                <div class="knowledge-cards">
+                    <div class="knowledge-card knowledge-level-expert">
+                        <div class="knowledge-card-icon">🌐</div>
+                        <h4 class="knowledge-card-name">HTML</h4>
+                        <span class="knowledge-badge knowledge-badge-expert"
+                            data-translate="knowledge.badges.expert">Знаю</span>
+                    </div>
+                    <div class="knowledge-card knowledge-level-expert">
+                        <div class="knowledge-card-icon">🎨</div>
+                        <h4 class="knowledge-card-name">CSS</h4>
+                        <span class="knowledge-badge knowledge-badge-expert"
+                            data-translate="knowledge.badges.expert">Знаю</span>
+                    </div>
+                    <div class="knowledge-card knowledge-level-expert">
+                        <div class="knowledge-card-icon">⚡</div>
+                        <h4 class="knowledge-card-name">JavaScript</h4>
+                        <span class="knowledge-badge knowledge-badge-expert"
+                            data-translate="knowledge.badges.expert">Знаю</span>
+                    </div>
+                    <div class="knowledge-card knowledge-level-learning">
+                        <div class="knowledge-card-icon">🐍</div>
+                        <h4 class="knowledge-card-name">Python</h4>
+                        <span class="knowledge-badge knowledge-badge-learning"
+                            data-translate="knowledge.badges.learning">Изучаю</span>
+                    </div>
+                </div>
+            </div>
+            <div class="knowledge-section">
+                <h3 class="knowledge-section-title" data-translate="knowledge.frameworks.title">Библиотеки и фреймворки
+                </h3>
+                <div class="knowledge-cards">
+                    <div class="knowledge-card knowledge-level-beginner">
+                        <div class="knowledge-card-icon">⚛️</div>
+                        <h4 class="knowledge-card-name">React</h4>
+                        <span class="knowledge-badge knowledge-badge-beginner"
+                            data-translate="knowledge.badges.beginner">Начинаю</span>
+                    </div>
+                    <div class="knowledge-card knowledge-level-beginner">
+                        <div class="knowledge-card-icon">💚</div>
+                        <h4 class="knowledge-card-name">Vue</h4>
+                        <span class="knowledge-badge knowledge-badge-beginner"
+                            data-translate="knowledge.badges.beginner">Начинаю</span>
+                    </div>
+                    <div class="knowledge-card knowledge-level-beginner">
+                        <div class="knowledge-card-icon">🅰️</div>
+                        <h4 class="knowledge-card-name">Angular</h4>
+                        <span class="knowledge-badge knowledge-badge-beginner"
+                            data-translate="knowledge.badges.beginner">Начинаю</span>
+                    </div>
+                </div>
+            </div>
+            <div class="knowledge-section">
+                <h3 class="knowledge-section-title" data-translate="knowledge.ai.title">Нейросети для автоматизации</h3>
+                <div class="knowledge-cards">
+                    <div class="knowledge-card knowledge-level-expert">
+                        <div class="knowledge-card-icon">🤖</div>
+                        <h4 class="knowledge-card-name">ChatGPT</h4>
+                        <p class="knowledge-card-description" data-translate="knowledge.ai.chatgpt">Использую для мелких, пайтоновских задач</p>
+                        <span class="knowledge-badge knowledge-badge-expert"
+                            data-translate="knowledge.badges.expert">Знаю</span>
+                    </div>
+                    <div class="knowledge-card knowledge-level-learning">
+                        <div class="knowledge-card-icon">✨</div>
+                        <h4 class="knowledge-card-name">Gemini</h4>
+                        <p class="knowledge-card-description" data-translate="knowledge.ai.gemini">Экспериментирую над ней</p>
+                        <span class="knowledge-badge knowledge-badge-learning"
+                            data-translate="knowledge.badges.learning">Изучаю</span>
+                    </div>
+                    <div class="knowledge-card knowledge-level-expert">
+                        <div class="knowledge-card-icon">🧠</div>
+                        <h4 class="knowledge-card-name">Sonnet</h4>
+                        <p class="knowledge-card-description" data-translate="knowledge.ai.sonnet">Стандартная для написания/автоматизации кода</p>
+                        <span class="knowledge-badge knowledge-badge-expert"
+                            data-translate="knowledge.badges.expert">Знаю</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="chapter" id="my_project" data-translate="sections.projects">МОИ ПРОЕКТЫ</p>
+        <div class="projects-container">
+            <div class="project-card">
+                <a href="index.html" class="project-link" target="_blank">
+                    <div class="project-image">
+                        <img src="img/screenshot1.png" alt="screenshot1" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">DANIILWORLD</h3>
+                        <p class="project-date">Changelog: 17.11.2025</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="#" class="project-link">
+                    <div class="project-image">
+                        <img src="img/projekt/1.png" alt="screenshot2" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-translate="projects.not_found">Проект не найден</h3>
+                        <p class="project-date">Changelog: 00.00.0000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="#" class="project-link">
+                    <div class="project-image">
+                        <img src="img/projekt/1.png" alt="screenshot3" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-translate="projects.not_found">Проект не найден</h3>
+                        <p class="project-date">Changelog: 00.00.0000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="index.html" class="project-link" target="_blank">
+                    <div class="project-image">
+                        <img src="img/projekt/1.png" alt="screenshot4" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-translate="projects.not_found">Проект не найден</h3>
+                        <p class="project-date">Changelog: 00.00.0000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="#" class="project-link">
+                    <div class="project-image">
+                        <img src="img/projekt/1.png" alt="screenshot5" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-translate="projects.not_found">Проект не найден</h3>
+                        <p class="project-date">Changelog: 00.00.0000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="#" class="project-link">
+                    <div class="project-image">
+                        <img src="img/projekt/1.png" alt="screenshot6" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-translate="projects.not_found">Проект не найден</h3>
+                        <p class="project-date">Changelog: 00.00.0000</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <p></p>
     </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title" data-translate="footer.navigation">Навигация</h3>
+                <ul class="footer-links">
+                    <li><a href="#about_me" data-translate="footer.about">Обо мне</a></li>
+                    <li><a href="#my_knowledge" data-translate="footer.knowledge">Мои знания</a></li>
+                    <li><a href="#my_project" data-translate="footer.projects">Мои проекты</a></li>
+                    <li><a href="./index.html" data-translate="footer.home">Главная</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title" data-translate="footer.social">Социальные сети</h3>
+                <ul class="footer-links">
+                    <li><a href="https://www.youtube.com/@daniilworld/" target="_blank">YouTube</a></li>
+                    <li><a href="https://t.me/daniilworld_blog_news" target="_blank">Telegram</a></li>
+                    <li><a href="https://github.com/DaniilWorld" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title" data-translate="footer.about_site">О сайте</h3>
+                <p class="footer-text" data-translate="footer.about_text">Личный сайт-портфолио разработчика DANIILWORLD
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DANIILWORLD. <span data-translate="footer.rights">Все права защищены.</span></p>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
+    <script src="js/translation.js"></script>
 </body>
 
 
