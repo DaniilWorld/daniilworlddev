@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         menuContainer.classList.toggle('active');
     });
 
-    // Закрываем меню при клике вне его
     document.addEventListener('click', function(event) {
         if (!event.target.closest('.header_continer')) {
             burgerMenu.classList.remove('active');
