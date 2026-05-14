@@ -115,6 +115,48 @@
     animation-delay: -4s;
 }
 
+.shape:nth-child(14) {
+    top: 15%;
+    left: 55%;
+    animation-delay: -6s;
+}
+
+.shape:nth-child(15) {
+    top: 65%;
+    left: 8%;
+    animation-delay: -8s;
+}
+
+.shape:nth-child(16) {
+    top: 78%;
+    right: 8%;
+    animation-delay: -10s;
+}
+
+.shape:nth-child(17) {
+    top: 5%;
+    left: 82%;
+    animation-delay: -12s;
+}
+
+.shape:nth-child(18) {
+    bottom: 18%;
+    left: 62%;
+    animation-delay: -14s;
+}
+
+.shape:nth-child(19) {
+    bottom: 42%;
+    right: 35%;
+    animation-delay: -16s;
+}
+
+.shape:nth-child(20) {
+    top: 36%;
+    left: 3%;
+    animation-delay: -18s;
+}
+
 @keyframes spin {
     from {
         transform: rotate(0deg);
